@@ -1,0 +1,15 @@
+<template name="home">
+	<div class="">
+
+				<div class="well well-large">
+					<label for="posttext">Message today</label>
+					<input placeholder="Whats on today?" class="input-xxlarge posttext" type="text/submit/hidden/button/etc" name="" value="">
+				</div>
+				<ul class="postlist list-unstyled">
+				{{#each posts}}
+					{{> post}}
+				{{/each}}
+			
+				</ul>
+	</div>
+</template>
